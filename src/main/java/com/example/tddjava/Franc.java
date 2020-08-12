@@ -1,8 +1,6 @@
 package com.example.tddjava;
 
-public class Franc {
-
-  private final int amount;
+public class Franc extends Money {
 
   public Franc(final int amount) {
     this.amount = amount;
@@ -11,9 +9,4 @@ public class Franc {
   Franc times(int multiplier) {
     return new Franc(amount * multiplier);
   }
-
-  public boolean equals(Object object) {
-    Franc franc = (Franc) object;
-    return amount == franc.amount;
-  }  
 }
