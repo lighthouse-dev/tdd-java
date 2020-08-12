@@ -2,7 +2,7 @@ package com.example.tddjava;
 
 public class Franc extends Money {
 
-  public Franc(final int amount) {
+  public Franc(int amount) {
     this.amount = amount;
   }
 

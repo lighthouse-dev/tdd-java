@@ -2,7 +2,7 @@ package com.example.tddjava;
 
 public class Dollar extends Money {
 
-  public Dollar(final int amount) {
+  public Dollar(int amount) {
     this.amount = amount;
   }
 
