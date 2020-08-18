@@ -12,7 +12,6 @@ class Money {
   }
 
   Money times(int multiplier) {
-    // return null;
     return new Money(amount * multiplier, currency);
   }
 
@@ -22,9 +21,7 @@ class Money {
 
   public boolean equals(Object object) {
     Money money = (Money) object;
-    return amount == money.amount
-      && currency.equals(money.currency());
-      // && getClass().equals(money.getClass());
+    return (amount == money.amount) && currency.equals(money.currency());
   }
 
   public String toString() {
@@ -35,10 +32,10 @@ class Money {
   }
 
   static Money dollar(int amount) {
-    return new Dollar(amount, "USD");
+    return new Money(amount, "USD");
   }
 
   static Money franc(int amount) {
-    return new Franc(amount, "CHF");
+    return new Money(amount, "CHF");
   }
 }
